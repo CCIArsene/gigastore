@@ -1,0 +1,21 @@
+{% extends 'layout/master-layout.html.twig' %}
+
+{% block body %}
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                {% include 'monthlyBook/monthlyBook.html.twig' %}
+            </div>
+
+            <div class="col-md-7">
+            {% include 'mentionLegalContent/mentionLegalContent.html.twig' %}
+            {% include 'recommendedBooks/recommendedBooks.html.twig' %}
+            </div>
+
+            <div class="col-md-2">
+                {% include 'newsContent/newsContent.html.twig' %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

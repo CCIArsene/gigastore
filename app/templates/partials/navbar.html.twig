@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><i class="bi bi-house"></i> Accueil</a>
+    <a class="navbar-brand" href="{{ path('app_home') }}"><i class="bi bi-house"></i> Accueil</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -21,10 +21,13 @@
       </ul>
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="bi bi-info-circle-fill"></i> Qui sommes-nous</a>
+          <a class="nav-link" href="{{ path('about_us_page') }}"><i class="bi bi-info-circle-fill"></i> Qui sommes-nous</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"> <i class="bi bi-envelope-fill"></i> Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ path('shop_page') }}"> <i class="bi bi-shop"></i> Boutique</a>
         </li>
       </ul>
     </div>

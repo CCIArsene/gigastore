@@ -6,12 +6,27 @@
 
     <div class="container mt-5">
         <div class="row">
-            {% include 'monthlyBook/monthlyBook.html.twig' %}
-            <div class="col-md-8">
-            {% include 'contentHome/contentHome.html.twig' %}
-            {% include 'recommendedBooks/recommendedBooks.html.twig' %}
-            
+            <div class="col-md-3">
+                {% include 'monthlyBook/monthlyBook.html.twig' %}
             </div>
+            <div class="col-md-7">
+                {% include 'contentHome/contentHome.html.twig' %}
+                {% include 'recommendedBooks/recommendedBooks.html.twig' %}            
+            </div>
+            <div class="col-md-2">
+                {% include 'newsContent/newsContent.html.twig' %}
+            </div>
+        </div>
+    </div>
+        <div class="row">
+        <div class="col-md-3">
+            {% include 'founderWords/founderWords.html.twig' %}
+        </div>
+        <div class="col-md-7">
+            {% include 'about_us_content/about_us_content.html.twig' %}
+        </div>
+        <div class="col-md-2">
+            {% include 'newsContent/newsContent.html.twig' %}
         </div>
     </div>
 {% endblock %}

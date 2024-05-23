@@ -1,0 +1,37 @@
+{% extends 'layout/master-layout.html.twig' %}
+
+{% block body %}
+
+    <div class="row">
+        <div class="col-md-3">
+            {% include 'monthlyBook/monthlyBook.html.twig' %}
+        </div>
+
+        <div class="col-md-7">
+            <div class="container mt-5">
+                <h1><i class="bi bi-shop"></i> Les boutiques Gigastore</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus distinctio modi neque corporis qui aliquam sit, necessitatibus harum, voluptas ducimus molestias sequi obcaecati repellat rem assumenda quos cumque doloremque asperiores vel optio, quo atque alias maxime! Illo eum odit sunt!</p>
+                <div class="row">
+                    {% for boutique in boutiques %}
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <img src="{{ asset('images/visuels/boutique01.jpg') }}" class="card-img-top" alt="Boutiques">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ boutique.nom }}</h5>
+                                    <p class="card-text">{{ boutique.adresse }}<br>{{ boutique.codepostal }} {{ boutique.ville }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>            
+        </div>
+        
+        <div class="col-md-2">
+            {% include 'newsContent/newsContent.html.twig' %}
+        </div>
+    </div>
+
+{% endblock %}
+
+

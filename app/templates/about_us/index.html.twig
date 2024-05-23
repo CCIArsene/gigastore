@@ -1,0 +1,17 @@
+{% extends 'layout/master-layout.html.twig' %}
+
+{% block body %}
+
+    <div class="row">
+        <div class="col-md-3">
+            {% include 'founderWords/founderWords.html.twig' %}
+        </div>
+        <div class="col-md-7">
+            {% include 'about_us_content/about_us_content.html.twig' %}
+        </div>
+        <div class="col-md-2">
+            {% include 'newsContent/newsContent.html.twig' %}
+        </div>
+    </div>
+
+{% endblock %}

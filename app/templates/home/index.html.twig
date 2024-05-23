@@ -1,0 +1,18 @@
+{% extends 'layout/master-layout.html.twig' %}
+
+
+{% block body %}
+    {% include 'slider/slider.html.twig' %}
+
+    <div class="container mt-5">
+        <div class="row">
+            {% include 'monthlyBook/monthlyBook.html.twig' %}
+            <div class="col-md-8">
+            {% include 'contentHome/contentHome.html.twig' %}
+            {% include 'recommendedBooks/recommendedBooks.html.twig' %}
+            
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
